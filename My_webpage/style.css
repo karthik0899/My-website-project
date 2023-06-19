@@ -1,0 +1,115 @@
+/* ==========================================================*/
+/* header section starts */
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    box-sizing: border-box;
+}
+body{
+    background-color:#18181a;
+    color:whitesmoke;
+}
+#header{
+    width: 100%;
+    height: 70vh;
+    background-image: url('myimages/Untitled design.png');
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 10px 4%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top:10%;
+    font-size: 30px; 
+}
+.header-text h1{
+    font-size: 55px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: red;
+}
+/* header section ends */
+/* ==========================================================*/
+/* About section starts */
+/* .image-container {
+    position: relative;
+    width: 300px;
+}
+
+.info-popup {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-container:hover .info-popup {
+    display: block;
+} */
+#about{
+    padding: 40px 0;
+    color: aliceblue;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+.about-col-2 p{
+    font-size: 30px;
+
+}
